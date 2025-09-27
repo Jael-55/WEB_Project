@@ -5,21 +5,21 @@
     padding: 10px 0 10px 0;
     gap: 30px;
     height: 30px;
-    }
-    .title h3 {
+}
+.title h3 {
     margin-top: 5px;
-    }
-    .menu {
+}
+.menu {
     display: block;
-    }
-    #text {
+}
+#text {
     border-radius: 30px;
     width: 300px;
-    }
-    #nutTim {
+}
+#nutTim {
     border-radius: 30px;
-    }
-    .thanhbar ul {
+}
+.thanhbar ul {
     display: flex;
     margin: 0;
     height: 40px;
@@ -28,9 +28,9 @@
     justify-content: center;
     background-color: rgb(139, 16, 37);
     padding-top: 15px;
-    }
+}
 
-    .thanhbar ul li a {
+.thanhbar ul li a {
     text-decoration: none;
     color: aliceblue;
-    }
+}
