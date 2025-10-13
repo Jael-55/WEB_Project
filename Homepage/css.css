@@ -1,3 +1,5 @@
+
+/* NAV CSS */
 .title {
     display: flex;
     background-color: rgb(234, 184, 193);
@@ -33,4 +35,11 @@
 .thanhbar ul li a {
     text-decoration: none;
     color: aliceblue;
+}
+
+
+/* INDEX CSS */
+
+.slideshow{
+    
 }
