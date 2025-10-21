@@ -13,10 +13,9 @@ header {
     background-color: rgb(255, 199, 210);
 }
 
-
-/* .row{
+.row {
     display: inline-flex;
-} */
+}
 
 .align-between {
     display: flex;

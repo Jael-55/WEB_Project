@@ -1,30 +1,36 @@
+// Modal
+function checkname() {
+    var name = /^[A-Z]{1}[A-Za-z]*(\s[A-Z]{1}[A-Za-z]*)+$/;
+    var ht = document.getElementById("txt-name");
+}
 
-    const track = document.querySelector('.slideshow');
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
 
-    const slideWidth = slides[0].offsetWidth;
-    const visibleSlides = 2;
-    let currentIndex = 0;
 
-    function updateSlidePosition() {
-        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
+const track = document.querySelector('.slideshow');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
 
-    nextBtn.addEventListener('click', () => {
-        currentIndex++;
-        if (currentIndex > slides.length - visibleSlides) {
+const slideWidth = slides[0].offsetWidth;
+const visibleSlides = 2;
+let currentIndex = 0;
+
+function updateSlidePosition() {
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    if (currentIndex > slides.length - visibleSlides) {
         currentIndex = 0;
-        }
-        updateSlidePosition();
-    });
+    }
+    updateSlidePosition();
+});
 
-    prevBtn.addEventListener('click', () => {
-        currentIndex--;
-        if (currentIndex < 0) {
+prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    if (currentIndex < 0) {
         currentIndex = slides.length - visibleSlides;
-        }
-        updateSlidePosition();
-    });
-
+    }
+    updateSlidePosition();
+});

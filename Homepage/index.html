@@ -65,7 +65,7 @@
             <li><a href="#">News</a></li>
             <li>
                 <a href="#">
-                    <button type="button" btn>Join us</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Joinmodel">Join us</button>
                 </a>
             </li>
         </ul>
@@ -252,13 +252,37 @@
         </div>
     </footer>
 
-    <!-- Model -->
-    <div class="model">
-        <div class="model-dialog">
-            <div class="model-content">
-                <div class="model-header"></div>
-                <div class="model-body"></div>
-                <div class="model-footer"></div>
+    <!-- Modal -->
+    <div class="modal" id="Joinmodel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Inform</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <th>Your name:</th>
+                            <td>
+                                <input type="text" name="name" id="txt-name" placeholder="Nguyen Van A">
+                            </td>
+                            <td>
+                                <span class="">*</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Your phone:</th>
+                            <td>
+                                <input type="tel" name="phone" id="txt-tel" placeholder="0xxxxxxxxx">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-dismiss="modal">Send</button>
+                </div>
             </div>
         </div>
     </div>
