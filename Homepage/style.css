@@ -125,7 +125,7 @@ header {
 }
 
 .page1 {
-    background-color: rgb(255, 182, 169);
+    background-color:rgb(255, 199, 210);
 }
 
 .page1 .banner img {
@@ -208,18 +208,18 @@ header {
 .category {
     font-size: 10px;
     /* letter-spacing: 1.5px; */
-    color: #bbb;
+    color: #505050;
 }
-
-.title {
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 6px 0;
+.card-info a{
+    color: rgb(139, 16, 37);
+}
+.card-info a:hover{
+    color: rgb(106, 106, 106);
 }
 
 .date {
     font-size: 10px;
-    color: #777;
+    color: #3d3d3d;
 }
 
 .main .title {
@@ -241,4 +241,11 @@ footer a {
 
 footer li {
     list-style: decimal;
+}
+
+/* MODEL */
+
+.modal-title{
+    font-weight: bolder;
+    color: rgb(139, 16, 37);
 }

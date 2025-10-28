@@ -1,3 +1,7 @@
+<script src="../js/bootstrap.min.js "></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="./js.js "></script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,7 +87,7 @@
             </li>
             <li>
                 <a href="#">
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Joinmodal">ĐĂNG KÝ</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#JoinModal">THAM GIA NGAY</button>
                 </a>
             </li>
         </ul>
@@ -273,7 +277,7 @@
                         <img src="./IMG/filip-rankovic-grobgaard-ABjeg-ZD3wI-unsplash-copy-768x461.webp" alt="Silk Skin" />
                         <div class="card-info">
                             <p class="category">FACE</p>
-                            <h3 class="title">Silk Skin Is the New Glass Skin</h3>
+                            <a href="#"><h3>Silk Skin Is the New Glass Skin</h3></a>
                             <p class="date">Oct 27, 2025</p>
                         </div>
                     </article>
@@ -282,7 +286,7 @@
                         <img src="./IMG/hilary-suff-2-GettyImages-2243516616-copy-910x600.webp" alt="Mature Skin Brand" />
                         <div class="card-info">
                             <p class="category">FACE</p>
-                            <h3 class="title">This Beloved Mature-Skin Brand Is Back at Sephora</h3>
+                            <a href="#"><h3>This Beloved Mature-Skin Brand Is Back at Sephora</h3></a>
                             <p class="date">Oct 27, 2025</p>
                         </div>
                     </article>
@@ -291,7 +295,7 @@
                         <img src="./IMG/lg-ulta-910x720.webp" alt="Hilary Duff Glow" />
                         <div class="card-info">
                             <p class="category">CELEBRITY</p>
-                            <h3 class="title">Behind Hilary Duff’s Signature Glow</h3>
+                            <a href="#"><h3>Behind Hilary Duff’s Signature Glow</h3></a>
                             <p class="date">Oct 27, 2025</p>
                         </div>
                     </article>
@@ -305,16 +309,16 @@
         <!-- <h2 style=" padding: 20px; color: rgb(164, 64, 129); ">ABOUT US</h2> -->
         <div class="row col-12 ">
             <div class="col-8 ">
-                <h5 style="margin-bottom: 10px; margin-left: 20px; ">CHI NHANH</h5><br>
+                <h5 style="font-weight: bolder; margin-bottom: 10px; margin-left: 20px; ">COME WITH US</h5><br>
                 <ul>
                     <li>
                         Chi nhánh Tân Phú: 49 Trần Hưng Đạo, Phường Tân Sơn Nhì, Thành phố Hồ Chí Minh, Việt Nam
                     </li>
                     <li>
-                        Chi nhánh Tân Phú: 49 Trần Hưng Đạo, Phường Tân Sơn Nhì, Thành phố Hồ Chí Minh, Việt Nam
+                        Chi nhánh Binh Thanh: 55/4 Ung Van Khiem, Phường Ba Chieu, Thành phố Hồ Chí Minh, Việt Nam
                     </li>
                     <li>
-                        Chi nhánh Tân Phú: 49 Trần Hưng Đạo, Phường Tân Sơn Nhì, Thành phố Hồ Chí Minh, Việt Nam
+                        Chi nhánh Ha Noi: 123 Nguyen Binh Khiem, Phường Cau Giay, Thành phố Ha Noi, Việt Nam
                     </li>
                     <li>Chi nhánh Cần Thơ: 65A Mậu Thân, Phường Ninh Kiều, Thành Phố Cần Thơ</li>
                 </ul>
@@ -328,7 +332,7 @@
                         <a href="# ">Instagram</a>
                     </div>
                     <div class="col-4 ">
-                        <h5>Contact us</h5>
+                        <h5>CALL IN</h5>
                         <a href="# ">0999999999</a>
                     </div>
 
@@ -345,35 +349,76 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal" id="Joinmodal ">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h3 class="modal-title ">Inform</h3>
-                    <button type="button " class="btn-close " data-bs-dismiss="modal "></button>
+    <div class="modal" id="JoinModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="registerModalLabel">
+                        <i class="fas fa-user-circle me-2"></i>THONG TIN DANG KY
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body ">
-                    <table>
-                        <tr>
-                            <th>Your name:</th>
-                            <td>
-                                <input type="text " name="name " id="txt-name " placeholder="Nguyen Van A ">
-                            </td>
-                            <td>
-                                <span class=" ">*</span>
-                            </td>
-                        </tr>
+                <div class="modal-body">
+                    <form id="registerForm" novalidate>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="name" placeholder="Tran Van A" required>
+                                <div class="invalid-feedback">
+                                    Vui long nhap lai (2-50 ky tu, chu cai hoac khoang trang)
+                                </div>
+                            </div>
+                        </div>
 
-                        <tr>
-                            <th>Your phone:</th>
-                            <td>
-                                <input type="tel " name="phone " id="txt-tel " placeholder="0xxxxxxxxx ">
-                            </td>
-                        </tr>
-                    </table>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
+                                <div class="invalid-feedback">
+                                    Vui long nhap email hop le
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label">Ngày sinh <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" class="form-control" id="birthdate" required>
+                                <div class="invalid-feedback" id="birthdateFeedback">
+                                    Ban phai tren 16 tuoi
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Số điện thoại</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                <input type="tel" class="form-control" id="phone" required>
+                                <div class="invalid-feedback">
+                                    Vui long nhap dung so dien thoai Viet Nam.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                Toi dong y voi <a href="#" class="text-decoration-none">dieu khoan</a> va <a href="#" class="text-decoration-none">cac chinh sach bao mat</a>
+                                <span class="text-danger">*</span>
+                            </label>
+                            <div class="invalid-feedback">
+                                Ban can dong y de tiep tuc.
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="modal-footer ">
-                    <button type="button " data-bs-dismiss="modal ">Send</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button" class="btn btn-success" id="submitBtn">SEND</button>
                 </div>
             </div>
         </div>
@@ -383,6 +428,3 @@
 </body>
 
 </html>
-<script src="../js/bootstrap.min.js "></script>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script src="./js.js "></script>
