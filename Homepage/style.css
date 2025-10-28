@@ -184,3 +184,61 @@ header {
 
 
 /* ITEM4 */
+
+.news-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 199, 210);
+    padding: 20px;
+}
+
+.makeup-card {
+    text-align: left;
+}
+
+.makeup-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-info {
+    margin-top: 10px;
+}
+
+.category {
+    font-size: 10px;
+    /* letter-spacing: 1.5px; */
+    color: #bbb;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 6px 0;
+}
+
+.date {
+    font-size: 10px;
+    color: #777;
+}
+
+.main .title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(139, 16, 37);
+    color: antiquewhite;
+}
+
+footer a {
+    color: #bbb;
+}
+
+footer li {
+    list-style: decimal;
+}
