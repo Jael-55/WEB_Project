@@ -1,172 +1,186 @@
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h2 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 header {
-  background-color: rgb(255, 199, 210);
+    background-color: rgb(255, 199, 210);
 }
 
 .row {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .align-between {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .align-center {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 /* MENU */
 
 .top-menu {
-  list-style: none;
+    list-style: none;
 }
 
 .top-menu li {
-  position: relative;
-  display: inline-block;
-  padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
 }
 
 .top-menu .sub-menu {
-  list-style: none;
-  display: none;
-  position: absolute;
-  z-index: 1000;
+    list-style: none;
+    display: none;
+    position: absolute;
+    z-index: 1000;
 }
 
-.top-menu li:hover > .sub-menu {
-  display: block;
-  background-color: rgb(255, 182, 169);
-  padding: 10px 0;
-  width: 150px;
+.top-menu li:hover>.sub-menu {
+    display: block;
+    background-color: rgb(255, 182, 169);
+    padding: 10px 0;
+    width: 150px;
 }
 
 .sub-menu a:hover {
-  background-color: rgb(234, 234, 234);
+    background-color: rgb(234, 234, 234);
 }
+
 
 /* SLIDE */
 
 .slide-box {
-  width: 65%;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .slideshow {
-  display: flex;
+    display: flex;
 }
 
 .slide {
-  /* flex: 0 0 100%; */
-  box-sizing: border-box;
+    /* flex: 0 0 100%; */
+    box-sizing: border-box;
 }
 
 .slide img {
-  display: block;
-  object-fit: cover;
+    display: block;
+    object-fit: cover;
 }
 
 .prev,
 .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .prev {
-  left: 10px;
+    left: 10px;
 }
 
 .next {
-  right: 10px;
+    right: 10px;
 }
 
 .prev:hover,
 .next:hover {
-  background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
+
 
 /* ITEM */
 
 .item-name {
-  color: rgb(164, 64, 129);
+    color: rgb(164, 64, 129);
 }
 
-
 .item2 img {
-  /* width: 200px; */
-  height: 200px;
+    /* width: 200px; */
+    height: 200px;
 }
 
 .page1 {
-  width: 40%;
-  background-color: rgb(255, 182, 169);
+    background-color: rgb(255, 182, 169);
 }
 
 .page1 .banner img {
-  width: 100%;
-  height: 200px;
+    width: 100%;
+    height: 200px;
 }
 
 .page1 .product-box {
-  display: block;
-  align-items: center;
+    display: block;
+    align-items: center;
 }
 
 .product-side {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .product-box {
-  display: block;
-  width: 24%;
-  align-items: center;
+    display: block;
+    width: 24%;
+    align-items: center;
 }
 
 .product-box img {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
 }
+
 .old-prize {
-  color: rgb(145, 145, 145);
-  text-decoration: line-through;
+    color: rgb(145, 145, 145);
+    text-decoration: line-through;
 }
+
 .new-prize {
-  font-weight: bold;
+    font-weight: bold;
 }
-.sale-prize{
-  color: rgb(116, 17, 0);
-  font-weight: bolder;
+
+.sale-prize {
+    color: rgb(116, 17, 0);
+    font-weight: bolder;
 }
 
 .mini-icon img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
+
+
+/* ITEM3 */
+
+.item3 {
+    width: 100%;
+}
+
+
+/* ITEM4 */
